@@ -78,14 +78,6 @@ export default function DashSidebar() {
             Dashboard
           </Sidebar.Item>
           <Sidebar.Item
-            active={tab === 'found-items'}
-            icon={HiOutlineDocumentSearch}
-            as={Link}
-            to="/dashboard?tab=found-items"
-          >
-            Found Items
-          </Sidebar.Item>
-          <Sidebar.Item
             active={tab === 'profile'}
             icon={HiUser}
             label={getRoleLabel(currentUser.role)} // Make sure currentUser and role exist
